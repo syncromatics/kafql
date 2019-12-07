@@ -1,0 +1,10 @@
+name: kafql
+namespace: development
+image: okteto/golang:1
+command: ["bash"]
+securityContext:
+  capabilities:
+    add:
+    - SYS_PTRACE
+forward:
+  - 8080:8080

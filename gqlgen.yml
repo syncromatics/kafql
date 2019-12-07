@@ -1,0 +1,10 @@
+schema:
+  - "docs/**/*.gql"
+
+exec:
+  filename: internal/server/generated.go
+  package: server
+
+model:
+  filename: internal/models/generated.go
+  package: models
