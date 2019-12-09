@@ -1,0 +1,20 @@
+scalar Time
+
+type Topic {
+    name: String!
+}
+
+type Record {
+    key: String!
+    value: String!
+    createdAt: Time!
+    offset: Int!
+}
+
+type Query {
+    getTopics: [Topic]
+}
+
+type Subscription {
+    recordAdded(topic: String!, key: String!): Record!
+}
